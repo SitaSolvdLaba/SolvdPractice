@@ -1,6 +1,6 @@
-package org.ClassHierarchy;
+package org.classhierarchy;
 
-public class SeparateClass {
+public class Executor {
     public static void main(String[] args) {
 
         Airport airport = new Airport("Denver International Airport", "Pena Boulevedar, Denver, Co");
@@ -14,16 +14,16 @@ public class SeparateClass {
         Seat seat = new Seat("Dia", "Pena Blvdr", "Harry Potter", 345879, "Business class", 3);
         Crew crew = new Crew("DIA", "Pena Bvdr", "United airlines", "720 395 4585", "Voldemort", "pilot", 758);
 
-        airport.airportInfo();
-        airlines.airlinesInfo();
-        passenger.passengerInfo();
-        security.securityInfo();
-        terminal.terminalInfo();
-        baggageDepartment.baggageInfo();
-        flight.flightInfo();
-        boardingPass.boardingPassInfo();
-        seat.seatInfo();
-        crew.crewInfo();
+        airport.getAirportInfo();
+        airlines.getAirlinesInfo();
+        passenger.getPassengerInfo();
+        security.getSecurityInfo();
+        terminal.getTerminalInfo();
+        baggageDepartment.getBaggageInfo();
+        flight.getFlightInfo();
+        boardingPass.getBoardingPassInfo();
+        seat.getSeatInfo();
+        crew.getCrewInfo();
 
 
 

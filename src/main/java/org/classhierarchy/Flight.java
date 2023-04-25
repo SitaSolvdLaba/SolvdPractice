@@ -1,4 +1,4 @@
-package org.ClassHierarchy;
+package org.classhierarchy;
 
 public class Flight extends Airlines{
 
@@ -13,7 +13,7 @@ public class Flight extends Airlines{
         this.gate = gate;
     }
 
-    public  void flightInfo(){
+    public  void getFlightInfo(){
         System.out.println(name + ", " + location + ", " + nameAirlines + ", " + contact + ", " + flightNumber + ", "+ departureTime + ", " + gate);
     }
 

@@ -1,4 +1,4 @@
-package org.ClassHierarchy;
+package org.classhierarchy;
 
 public class BaggageDepartment extends Airport {
 
@@ -27,7 +27,7 @@ public class BaggageDepartment extends Airport {
         this.weight = weight;
     }
 
-    public void baggageInfo(){
+    public void getBaggageInfo() {
         System.out.println(name + ", " + location + ", " + quantityCheckedIn + ", " + weight);
     }
 

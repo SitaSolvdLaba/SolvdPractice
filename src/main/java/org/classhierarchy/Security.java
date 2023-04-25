@@ -1,4 +1,4 @@
-package org.ClassHierarchy;
+package org.classhierarchy;
 
 public class Security extends Airport {
 
@@ -9,7 +9,7 @@ public class Security extends Airport {
         this.securityCheckpoint = securityCheckpoint;
     }
 
-    public void securityInfo(){
+    public void getSecurityInfo(){
         System.out.println(name + ", " + location + ", " + securityCheckpoint);
     }
 }

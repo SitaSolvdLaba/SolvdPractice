@@ -1,4 +1,4 @@
-package org.ClassHierarchy;
+package org.classhierarchy;
 
 public class Terminal extends  Airport {
 
@@ -13,7 +13,7 @@ public class Terminal extends  Airport {
         this.airlines = airlines;
     }
 
-    public void terminalInfo(){
+    public void getTerminalInfo(){
         System.out.println(name + ", " + location + ", " + terminalNumber + ", " + capacity + ", " + airlines);
     }
 }

@@ -1,4 +1,4 @@
-package org.ClassHierarchy;
+package org.classhierarchy;
 
 public class Crew extends Airlines{
 
@@ -12,7 +12,6 @@ public class Crew extends Airlines{
         this.position = position;
         this.flight = flight;
     }
-
 
 
     public String getNameOfCrew() {
@@ -39,7 +38,7 @@ public class Crew extends Airlines{
         this.flight = flight;
     }
 
-    public void crewInfo(){
+    public void getCrewInfo(){
         System.out.println(name + ", " + location + ", " + nameAirlines + ", " + contact + ", " + nameOfCrew + ", " + position + ", " + flight);
     }
 }

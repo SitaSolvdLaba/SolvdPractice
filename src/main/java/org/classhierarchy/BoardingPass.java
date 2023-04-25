@@ -1,10 +1,9 @@
-package org.ClassHierarchy;
+package org.classhierarchy;
 
 public class BoardingPass extends Airlines {
 
     private String passengerName;
     private int seatNumber;
-
     private String arrival;
 
     public BoardingPass(String name, String location, String nameAirlines, String contact, String passengerName, int seatNumber) {
@@ -37,7 +36,7 @@ public class BoardingPass extends Airlines {
         this.arrival = arrival;
     }
 
-    public void boardingPassInfo(){
+    public void getBoardingPassInfo() {
         System.out.println(name + ", " + location + ", " + nameAirlines + ", " + contact + ", " + passengerName + ", " + seatNumber);
     }
 

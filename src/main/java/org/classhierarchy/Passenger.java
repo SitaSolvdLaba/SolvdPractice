@@ -1,4 +1,4 @@
-package org.ClassHierarchy;
+package org.classhierarchy;
 
 public class Passenger extends Airport {
 
@@ -10,7 +10,6 @@ public class Passenger extends Airport {
         this.passengerName = passengerName;
         this.id = id;
     }
-
 
     public String getPassengerName() {
         return passengerName;
@@ -28,7 +27,7 @@ public class Passenger extends Airport {
         this.id = id;
     }
 
-    public  void passengerInfo(){
+    public  void getPassengerInfo(){
         System.out.println(name + ", " + location + ", " + passengerName + ", " + id);
     }
 

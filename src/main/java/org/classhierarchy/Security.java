@@ -9,7 +9,7 @@ public class Security extends Airport {
         this.securityCheckpoint = securityCheckpoint;
     }
 
-    public void getSecurityInfo(){
+    protected void getSecurityInfo(){
         System.out.println(name + ", " + location + ", " + securityCheckpoint);
     }
 }

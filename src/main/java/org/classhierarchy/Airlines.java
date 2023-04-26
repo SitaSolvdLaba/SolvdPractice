@@ -15,5 +15,9 @@ public class Airlines extends Airport {
         System.out.println(name + ", " + location + ", " + nameAirlines + ", " + contact);
     }
 
+    protected void fly(){
+
+    }
+
 
 }

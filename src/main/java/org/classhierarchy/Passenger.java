@@ -27,7 +27,7 @@ public class Passenger extends Airport {
         this.id = id;
     }
 
-    public  void getPassengerInfo(){
+    protected void getPassengerInfo(){
         System.out.println(name + ", " + location + ", " + passengerName + ", " + id);
     }
 

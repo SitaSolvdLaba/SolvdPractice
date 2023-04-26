@@ -5,11 +5,14 @@ public class BoardingPass extends Airlines {
     private String passengerName;
     private int seatNumber;
     private String arrival;
+    protected String arrivalTime;
 
-    public BoardingPass(String name, String location, String nameAirlines, String contact, String passengerName, int seatNumber) {
+    public BoardingPass(String name, String location, String nameAirlines, String contact, String passengerName, int seatNumber, String arrival, String arrivalTime) {
         super(name, location, nameAirlines, contact);
         this.passengerName = passengerName;
         this.seatNumber = seatNumber;
+        this.arrival = arrival;
+        this.arrivalTime = arrivalTime;
     }
 
     public String getPassengerName() {
@@ -40,4 +43,9 @@ public class BoardingPass extends Airlines {
         System.out.println(name + ", " + location + ", " + nameAirlines + ", " + contact + ", " + passengerName + ", " + seatNumber);
     }
 
+
+    @Override
+    protected void fly() {
+        System.out.println(passengerName + " arrives at " + arrivalTime);
+    }
 }

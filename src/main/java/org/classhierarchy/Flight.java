@@ -56,7 +56,7 @@ public class Flight extends Airlines implements FlightOperations{
 
     }
 
-    List<Flight> flights = new ArrayList<Flight>();
+    List<Integer> flights = new ArrayList<Integer>();
 
 
 }

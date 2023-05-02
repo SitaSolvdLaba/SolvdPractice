@@ -45,5 +45,5 @@ public class Passenger extends Airport implements PassengerOperations{
         System.out.println("Cancel " + reservation + " reservation to id 4758126694");
     }
 
-    Set<Passenger> passengers = new HashSet<Passenger>();
+    Set<String> passengers = new HashSet<String>();
 }

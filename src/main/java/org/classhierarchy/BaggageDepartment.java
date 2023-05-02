@@ -35,6 +35,6 @@ public class BaggageDepartment extends Airport {
     }
 
 
-    Queue<BaggageDepartment> baggageQueue = new LinkedList<BaggageDepartment>();
+    Queue<String> baggageQueue = new LinkedList<String>();
 
 }

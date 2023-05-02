@@ -6,6 +6,8 @@ public class Crew extends Airlines{
     private String position;
     private int flight;
 
+
+
     public Crew(String name, String location, String nameAirlines, String contact, String nameOfCrew, String position, int flight) {
         super(name, location, nameAirlines, contact);
         this.nameOfCrew = nameOfCrew;
@@ -38,7 +40,7 @@ public class Crew extends Airlines{
         this.flight = flight;
     }
 
-    public void getCrewInfo(){
+    final void getCrewInfo(){
         System.out.println(name + ", " + location + ", " + nameAirlines + ", " + contact + ", " + nameOfCrew + ", " + position + ", " + flight);
     }
 }

@@ -1,6 +1,9 @@
 package org.classhierarchy;
 
-public class Passenger extends Airport {
+import java.util.HashSet;
+import java.util.Set;
+
+public class Passenger extends Airport implements PassengerOperations{
 
     private String passengerName;
     private int id;
@@ -32,4 +35,15 @@ public class Passenger extends Airport {
     }
 
 
+    @Override
+    public void addFlight(String flightNumber) {
+        System.out.println("Add " + flightNumber + " to id 75485961");
+    }
+
+    @Override
+    public void cancelReservations(int reservation) {
+        System.out.println("Cancel " + reservation + " reservation to id 4758126694");
+    }
+
+    Set<Passenger> passengers = new HashSet<Passenger>();
 }

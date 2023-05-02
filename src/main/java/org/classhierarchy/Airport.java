@@ -1,6 +1,6 @@
 package org.classhierarchy;
 
-public class Airport {
+public class Airport implements AirportOperations {
 
     String name;
     String location;
@@ -15,4 +15,14 @@ public class Airport {
     }
 
 
+
+    @Override
+    public void scheduleFlight(String flight) {
+        System.out.println(flight + " is scheduled");
+    }
+
+    @Override
+    public void cancelFlight(String flight) {
+        System.out.println(flight + " is canceled");
+    }
 }

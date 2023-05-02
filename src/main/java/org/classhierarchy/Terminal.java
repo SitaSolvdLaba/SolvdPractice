@@ -1,9 +1,9 @@
 package org.classhierarchy;
 
-public class Terminal extends  Airport {
+final class Terminal extends  Airport {
 
     String terminalNumber;
-    int capacity;
+    final int capacity;
     String airlines;
 
     public Terminal(String name, String location, String terminalNumber, int capacity, String airlines) {

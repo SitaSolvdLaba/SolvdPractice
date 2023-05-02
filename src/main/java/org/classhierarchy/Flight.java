@@ -1,6 +1,9 @@
 package org.classhierarchy;
 
-public class Flight extends Airlines{
+import java.util.ArrayList;
+import java.util.List;
+
+public class Flight extends Airlines implements FlightOperations{
 
     private int flightNumber;
     private String departureTime;
@@ -41,4 +44,19 @@ public class Flight extends Airlines{
     public void setGate(String gate) {
         this.gate = gate;
     }
+
+    @Override
+    public void addPassenger(String passengerId) {
+        System.out.println("Add " + passengerId + " to flight");
+    }
+
+    @Override
+    public void removePassenger(String passengerId) {
+        System.out.println("Remove " + passengerId + " + from flight");
+
+    }
+
+    List<Flight> flights = new ArrayList<Flight>();
+
+
 }

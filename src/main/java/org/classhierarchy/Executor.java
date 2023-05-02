@@ -28,6 +28,15 @@ public class Executor {
         Airlines airlines1 = new BoardingPass("DIA", "Penna blvd", "United", "7241", "Ron Wesley", 5, "Miami", "10:00");
         airlines1.fly();
 
+        Airport airport1 = new Airport("DiA", "Penna");
+
+        airport1.scheduleFlight("548");
+
+        Flight flight2 = new Flight("DIA", "Penna", "United", "720456", 458, "05:50pm", "gate 4");
+        flight2.getFlightInfo();
+
+
+
 
 
 

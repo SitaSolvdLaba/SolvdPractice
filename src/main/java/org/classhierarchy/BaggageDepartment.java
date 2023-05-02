@@ -1,5 +1,8 @@
 package org.classhierarchy;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class BaggageDepartment extends Airport {
 
     private int quantityCheckedIn;
@@ -30,5 +33,8 @@ public class BaggageDepartment extends Airport {
     public void getBaggageInfo() {
         System.out.println(name + ", " + location + ", " + quantityCheckedIn + ", " + weight);
     }
+
+
+    Queue<BaggageDepartment> baggageQueue = new LinkedList<BaggageDepartment>();
 
 }
